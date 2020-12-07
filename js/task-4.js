@@ -6,13 +6,8 @@
 const formatString = function (string) {
   const newString = string.length > 40 ? string.substring(0, 41) + "..." : string;
   return string;
-
-  // твой код
 };
 
-/*
- * Вызовы функции для проверки работоспособности твоей реализации.
- */
 console.log(formatString("Curabitur ligula sapien, tincidunt non."));
 // вернется оригинальная строка
 
