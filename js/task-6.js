@@ -15,7 +15,7 @@ let input;
 const numbers = [];
 let total = 0;
 */
-
+const numbers = [];
 let total = 0;
 while (true) {
   let input = prompt("Введите число:");
@@ -25,9 +25,16 @@ while (true) {
   input = Number(input);
   const notANumber = Number.isNaN(input);
   if (notANumber) {
-    alert("Вы ввели не число, попробуёте ещё!");
+    alert("Вы ввели не число, попробуёте  число!");
     continue;
   }
-  total += input;
+  numbers.push(input);
 }
-alert(`Общая сумма: ${total}`);
+for (const number of numbers) {
+  total += number;
+}
+console.log(`Вы ввели: ${numbers}`);
+
+return total;
+
+console.log(`Общая сумма чисел: ${sum(numbers)}`);
